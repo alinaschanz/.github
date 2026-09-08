@@ -1,0 +1,26 @@
+name: idea
+description: a feature, a data source, a label list, a chain
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: what would it show
+      description: the number or table you wish the tool printed
+    validations:
+      required: true
+  - type: textarea
+    id: where
+    attributes:
+      label: where the data comes from
+      description: which public contract call, rpc method or public api gives it, without a key
+    validations:
+      required: true
+  - type: dropdown
+    id: doing
+    attributes:
+      label: are you up for doing it
+      options:
+        - "yes, i can open a pull request"
+        - "maybe, with pointers"
+        - "no, just the idea"

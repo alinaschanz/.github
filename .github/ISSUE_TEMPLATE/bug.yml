@@ -1,0 +1,37 @@
+name: wrong number or broken run
+description: a tool printed something wrong, crashed, or hung
+labels: ["bug"]
+body:
+  - type: input
+    id: command
+    attributes:
+      label: command
+      description: the exact command line, with flags
+      placeholder: "bigmoves --blocks 50 --min-usd 1000000"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: what you expected
+      description: the number or behaviour you expected, and where it comes from (explorer link, another tool)
+    validations:
+      required: true
+  - type: textarea
+    id: got
+    attributes:
+      label: what you got
+      description: paste the output or the traceback; block numbers and tx hashes help a lot
+      render: text
+    validations:
+      required: true
+  - type: input
+    id: rpc
+    attributes:
+      label: rpc endpoint
+      description: which endpoint answered (the default list, or your `--rpc`)
+  - type: input
+    id: version
+    attributes:
+      label: version
+      placeholder: "output of `<tool> --version`, and python version"

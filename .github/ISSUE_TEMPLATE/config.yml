@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: security
+    url: https://github.com/alinaschanz/.github/blob/main/SECURITY.md
+    about: something leaks or executes what it should not - please mail, do not post
+  - name: notes and context
+    url: https://alinaschanz.life
+    about: the longer notes behind the numbers
